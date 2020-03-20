@@ -1,7 +1,7 @@
 # Pregunta 1 entrevista Tomas Burotto
 
 
-def fetch_value2(array, name):
+def fetch_value(array, name):
     # En primer lugar filtro el array por aquellos names que existan dentro de el diccionario
     result = list(filter(lambda x: x['name'] == name, array))
     # Reviso el caso en que no hayan resultados y retorno el string 'not found'
@@ -36,5 +36,5 @@ if __name__ == '__main__':
             'value': '321'
         },
     ]
-    value = fetch_value2(arr, "Boleto")
+    value = fetch_value(arr, "Boleto")
     print(value)
